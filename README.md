@@ -60,11 +60,11 @@ La aplicación consume datos de la **WorldCupAPI** — una API ya desarrollada p
 - [Contexto](#contexto)
 - [Stack técnico](#stack-técnico)
 - [Integrantes del grupo](#integrantes-del-grupo)
+- [Documentación](#documentación)
 - [Requerimientos generales](#requerimientos-generales-de-la-aplicación)
 - [Configuración del .env](#configuración-del-env-del-worldcupcore)
 - [Cómo levantar el proyecto](#cómo-levantar-el-proyecto)
 - [Estructura de proyecto](#estructura-de-proyecto)
-- [Documentación](#documentación)
 - [Entregables](#entregables)
 
 ---
