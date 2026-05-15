@@ -1,7 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { AdminService } from '../../admin/admin.service';
 import { AbstractBaseService } from '../../basic/abstract-base.service';
-import { getOtherInternationalTitlesLabel } from '../../basic/helpers/i18n.helper';
 import { normalizeCount, normalizeStringArray } from '../../basic/helpers/normalize.helper';
 import { LanguageEnum } from '../../basic/model/language.enum';
 import { WorldCupFeatureApiService } from '../../basic/world-cup-feature-api.service';
@@ -144,10 +143,15 @@ export class TeamHistoryService extends AbstractBaseService {
 
     return new TeamHistorySectionModel({
       key: 'other-international-titles',
-      title: getOtherInternationalTitlesLabel(lang),
+      title: this.getOtherInternationalTitlesLabel(lang),
       count,
       chips,
     });
+  }
+
+
+  private getOtherInternationalTitlesLabel(lang: LanguageEnum): string {
+    return lang === LanguageEnum.ES ? 'Otros titulos internacionales' : 'Other International Titles';
   }
 
   /** Builds chips for dedicated sections using year + host where available. */

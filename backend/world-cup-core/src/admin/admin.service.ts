@@ -1,6 +1,5 @@
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { normalizeLanguage, normalizeTeamId } from '../basic/helpers/normalize.helper';
 import { LanguageEnum } from '../basic/model/language.enum';
 import { WorldCupApiService } from '../basic/world-cup-api.service';
 import { getTeamTheme, TeamTheme } from './team-themes.config';
@@ -21,7 +20,7 @@ export class AdminService {
     private readonly worldCupApiService: WorldCupApiService,
   ) {
     this.currentTeamId = this.configService.get<string>('TEAM_ID', 'arg').toLowerCase();
-    this.currentLang = normalizeLanguage(this.configService.get<string>('APP_LANG', LanguageEnum.DEFAULT));
+    this.currentLang = this.configService.get<LanguageEnum>('APP_LANG', LanguageEnum.DEFAULT);
   }
 
   /** Returns currently selected team id. */
@@ -43,7 +42,7 @@ export class AdminService {
 
   /** Updates selected language after normalization. */
   public setCurrentLang(lang: string): void {
-    this.currentLang = normalizeLanguage(lang, LanguageEnum.DEFAULT);
+    this.currentLang = lang as LanguageEnum;
   }
 
   /** Applies optional team/lang updates in one request and returns resulting config. */
@@ -116,15 +115,14 @@ export class AdminService {
 
   /** Validates and returns normalized team id input. */
   private getValidatedTeamId(teamId: string): string {
-    const normalizedId = normalizeTeamId(teamId);
-    if (!normalizedId) {
+    if (!teamId) {
       throw new BadRequestException({
         messageCode: 'ADMIN_TEAM_ID_REQUIRED',
         message: 'teamId is required.',
       });
     }
 
-    return normalizedId;
+    return teamId;
   }
 
   /** Ensures a team id exists in World Cup API before persisting it in config. */
