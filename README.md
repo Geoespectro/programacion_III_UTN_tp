@@ -50,7 +50,7 @@ Entre sus responsabilidades se incluyen:
 | # | Integrante | Funcionalidad | Sección |
 |---|-----------|---------------|---------|
 | 1 |D'Andrea Joaquin | Cuerpo Técnico y Estrategia | Mi Equipo |
-| 2 | | Rivales Históricos | Mi Equipo |
+| 2 |Ruth Mane| Rivales Históricos | Mi Equipo |
 | 3 |Agostina Morales | Fase de Grupos | El Mundial |
 | 4 |Juan Carlos Quinteros| Camino del Equipo | El Mundial |
 | 5 | Francisco Cuce | Detalles de Partidos | El Mundial |
