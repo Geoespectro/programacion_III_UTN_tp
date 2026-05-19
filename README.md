@@ -53,7 +53,7 @@ Entre sus responsabilidades se incluyen:
 | 2 | | Rivales Históricos | Mi Equipo |
 | 3 | | Fase de Grupos | El Mundial |
 | 4 | | Camino del Equipo | El Mundial |
-| 5 | | Detalles de Partidos | El Mundial |
+| 5 | Francisco Cuce | Detalles de Partidos | El Mundial |
 | 6 | | Estadísticas y Premios | El Mundial |
 | 7 | | Historial de Mundiales | El Mundial |
 | 8 | | Eventos en Vivo | La Final |
