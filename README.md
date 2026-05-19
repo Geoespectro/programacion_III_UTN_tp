@@ -54,7 +54,7 @@ Entre sus responsabilidades se incluyen:
 | 3 | | Fase de Grupos | El Mundial |
 | 4 |Juan Carlos Quinteros| Camino del Equipo | El Mundial |
 | 5 | Francisco Cuce | Detalles de Partidos | El Mundial |
-| 6 | | Estadísticas y Premios | El Mundial |
+| 6 | Antonio Guerendiain | Estadísticas y Premios | El Mundial |
 | 7 | Pereyra Leonel | Historial de Mundiales | El Mundial |
 | 8 | | Eventos en Vivo | La Final |
 | 9 | | Estado del Equipo en la Final | La Final |
