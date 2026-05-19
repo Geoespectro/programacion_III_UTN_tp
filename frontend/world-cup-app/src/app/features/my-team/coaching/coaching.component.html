@@ -3,8 +3,79 @@
     <span class="card-title">Cuerpo Técnico y Estrategia</span>
   </div>
 
-  <p>
-    Esta pantalla va a mostrara el entrenador, la estrategia, la formación
-    y los ratings del equipo.
-  </p>
+  <div class="grid grid-3 coaching-layout">
+    <article class="coaching-panel">
+      <div class="coaching-panel-title">Panel del Entrenador</div>
+
+      <p><strong>Nombre:</strong> Entrenador de Australia</p>
+      <p><strong>Nacionalidad:</strong> Australia</p>
+      <p><strong>Edad:</strong> --</p>
+
+      <div class="coach-profile-pill-row">
+        <span class="badge profile-chip-small">BALANCED</span>
+      </div>
+
+      <div class="coach-profile-summary">
+        <p class="coach-profile-summary-description">
+          Perfil equilibrado, pendiente de cargar desde la API.
+        </p>
+      </div>
+    </article>
+
+    <article class="coaching-panel">
+      <div class="coaching-panel-title">Configuración Táctica</div>
+
+      <div class="coaching-current-row">
+        <div>
+          <div class="coaching-current-lbl">Estrategia actual</div>
+          <span class="badge coaching-pill">BALANCED</span>
+        </div>
+
+        <div>
+          <div class="coaching-current-lbl">Formación actual</div>
+          <span class="badge coaching-pill">4-4-2</span>
+        </div>
+      </div>
+
+      <div class="coaching-controls-row">
+        <div>
+          <label for="strategy">Estrategia</label>
+          <select id="strategy" class="coaching-select">
+            <option selected>BALANCED</option>
+            <option>AGGRESSIVE</option>
+            <option>POSSESSION</option>
+            <option>COUNTER_ATTACK</option>
+          </select>
+        </div>
+
+        <div class="coaching-formation-control">
+          <label for="formation">Formación</label>
+          <select id="formation" class="coaching-select">
+            <option>4-3-3</option>
+            <option selected>4-4-2</option>
+            <option>3-5-2</option>
+          </select>
+        </div>
+
+        <button type="button" class="btn coaching-reset-btn coaching-reset-inline">
+          Restaurar táctica
+        </button>
+      </div>
+
+      <div class="coaching-compatibility-status">
+        <span class="coaching-status-pill coaching-status-original">
+          Compatibilidad pendiente de API
+        </span>
+      </div>
+    </article>
+
+    <article class="coaching-panel">
+      <div class="coaching-panel-title">Rating del Equipo</div>
+
+      <p><strong>Ataque:</strong> --</p>
+      <p><strong>Mediocampo:</strong> --</p>
+      <p><strong>Defensa:</strong> --</p>
+      <p><strong>General:</strong> --</p>
+    </article>
+  </div>
 </section>
